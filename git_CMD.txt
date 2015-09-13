@@ -1,0 +1,32 @@
+//http://blog.jobbole.com/78960/
+
+git config -global user.name "sheldon_li"
+git config -global user.email "446065469@qq.com"
+
+git init
+ls -a
+
+git add --all .
+git commit -a     |    git commit -m "cmd.txt"
+git status
+git diff cmd.txt  
+
+git log   |   git log --pretty=oneline  |  git reflog   //版本
+git reset --hard HEAD~N     |    git reset -hard 6adbcd8  //回退到某一版本
+
+git checkout -- cmd.txt   //回撤, 如果没有--  则是创建分支
+
+ssh-keygen  -t rsa –C “446065469@qq.com”  //id_rsa 钥
+
+git remote add origin https://github.com/dragonforgithub/git_cmd.git
+git push -u origin master
+git clone https://github.com/dragonforgithub/git_cmd.git
+
+git checkout -b dev //创建并切换dev分支
+git branch   //查看当前的分支
+git checkout master  
+git merge dev //在master分支上合并dev分支内容
+git branch -d dev //删除dev分支
+
+
+
