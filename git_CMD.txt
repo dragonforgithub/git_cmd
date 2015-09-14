@@ -1,4 +1,6 @@
 //http://blog.jobbole.com/78960/
+//http://www.cnblogs.com/angeldevil/p/3238470.html
+
 
 git config -global user.name "sheldon_li"
 git config -global user.email "446065469@qq.com"
